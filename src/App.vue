@@ -123,7 +123,7 @@ function loadMore({ complete, loaded, error }: Record<string, Function>) {
 </script>
 
 <template>
-  <div id="score-list" class="w-full bg-blue text-white">
+  <div id="score-list" class="w-full bg-background text-prime">
     <div class="w-full max-w-screen-lg py-4 mx-auto px-4 sm:px-8">
 
       <div v-if="isTest" class="bg-amber-50 text-amber-500 rounded-sm opacity-90 text-sm font-bold p-2 text-center">SHOWING TEST DATA</div>
@@ -131,11 +131,11 @@ function loadMore({ complete, loaded, error }: Record<string, Function>) {
       <div class="sticky top-0 z-40 pt-4 px-4">
         <div class="w-full my-4">
           <input name="search" v-model="searchValue" placeholder="Search..."
-                 class="py-3 px-4 shadow-sm text-blue focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-xl" />
+                 class="py-3 px-4 shadow-sm text-prime focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-xl" />
         </div>
       </div>
 
-      <div class="my-4 shadow-inner">
+      <div class="my-4">
         <transition-group name="flip-list" appear>
           <ScoreRow v-for="(row, index) in scores" :key="row.id"
                     :rank="row.rank"

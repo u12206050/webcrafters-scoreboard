@@ -17576,6 +17576,15 @@ function registerAnalytics() {
   }
 }
 registerAnalytics();
+const firebaseConfig = {
+  apiKey: "AIzaSyCQgkdpL6qywF6uZB5vatN1pVmrKu9tNs4",
+  authDomain: "webcrafters-scoreboard.firebaseapp.com",
+  projectId: "webcrafters-scoreboard",
+  storageBucket: "webcrafters-scoreboard.appspot.com",
+  messagingSenderId: "542190411287",
+  appId: "1:542190411287:web:41f1c831da7a14c6568652",
+  measurementId: "G-VF0LYZJYHE"
+};
 var _export_sfc$1 = (sfc, props) => {
   for (const [key, val] of props) {
     sfc[key] = val;
@@ -17749,19 +17758,19 @@ const _sfc_main$1 = {
     isActive: Boolean
   }
 };
-const _hoisted_1$1 = { class: "text-yellow w-10 text-right" };
+const _hoisted_1$1 = { class: "text-numbers w-10 text-right" };
 const _hoisted_2$1 = { class: "px-4 flex-1" };
 const _hoisted_3$1 = { class: "capitalize" };
-const _hoisted_4$1 = { class: "sm:text-lg text-gray-300 capitalize" };
+const _hoisted_4$1 = { class: "sm:text-lg text-alt capitalize" };
 const _hoisted_5$1 = { class: "leading-tight text-center" };
 const _hoisted_6$1 = /* @__PURE__ */ createBaseVNode("p", { class: "text-xs sm:text-sm" }, "Score", -1);
-const _hoisted_7 = { class: "text-yellow text-xl" };
+const _hoisted_7 = { class: "text-numbers text-xl" };
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(["py-1 sm:py-2", $props.isActive ? "sticky bottom-0 top-0 z-50" : ""])
   }, [
     createBaseVNode("div", {
-      class: normalizeClass(["rounded-xl text-lg sm:text-xl font-medium py-2 sm:py-4 pl-2 pr-4 sm:pl-4 sm:pr-8 flex items-center", $props.isActive ? "border-2 border-yellow bg-blue-alt" : "border border-white-30"])
+      class: normalizeClass(["rounded-xl text-lg sm:text-xl font-medium py-2 sm:py-4 pl-2 pr-4 sm:pl-4 sm:pr-8 flex items-center", $props.isActive ? "border-2 border-numbers bg-alt" : "border border-white-30"])
     }, [
       createBaseVNode("p", _hoisted_1$1, toDisplayString($props.rank) + ".", 1),
       createBaseVNode("div", _hoisted_2$1, [
@@ -24064,7 +24073,7 @@ var flexsearch_bundle = { exports: {} };
 var App_vue_vue_type_style_index_0_lang = "";
 const _hoisted_1 = {
   id: "score-list",
-  class: "w-full bg-blue text-white"
+  class: "w-full bg-background text-prime"
 };
 const _hoisted_2 = { class: "w-full max-w-screen-lg py-4 mx-auto px-4 sm:px-8" };
 const _hoisted_3 = {
@@ -24073,7 +24082,7 @@ const _hoisted_3 = {
 };
 const _hoisted_4 = { class: "sticky top-0 z-40 pt-4 px-4" };
 const _hoisted_5 = { class: "w-full my-4" };
-const _hoisted_6 = { class: "my-4 shadow-inner" };
+const _hoisted_6 = { class: "my-4" };
 const _sfc_main = /* @__PURE__ */ defineComponent({
   setup(__props) {
     var _a2;
@@ -24165,7 +24174,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
                 name: "search",
                 "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => searchValue.value = $event),
                 placeholder: "Search...",
-                class: "py-3 px-4 shadow-sm text-blue focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-xl"
+                class: "py-3 px-4 shadow-sm text-prime focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-xl"
               }, null, 512), [
                 [vModelText, searchValue.value]
               ])
@@ -24207,15 +24216,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
 });
 var styles = "";
 const app = createApp(_sfc_main);
-const firebaseConfig = {
-  apiKey: "AIzaSyCQgkdpL6qywF6uZB5vatN1pVmrKu9tNs4",
-  authDomain: "webcrafters-scoreboard.firebaseapp.com",
-  projectId: "webcrafters-scoreboard",
-  storageBucket: "webcrafters-scoreboard.appspot.com",
-  messagingSenderId: "542190411287",
-  appId: "1:542190411287:web:41f1c831da7a14c6568652",
-  measurementId: "G-VF0LYZJYHE"
-};
 const firebaseApp = initializeApp(firebaseConfig);
 getAnalytics(firebaseApp);
 const firestore = Dc(firebaseApp);

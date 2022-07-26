@@ -11,9 +11,10 @@ module.exports = {
         'white-50': 'rgba(255, 255, 255, 0.5)',
         'white-70': 'rgba(255, 255, 255, 0.7)',
 
-        'blue': '#1f498f',
-        'blue-alt': '#2659AE',
-        'yellow': '#f5c13e'
+        'background': 'var(--background)',
+        'prime': 'var(--prime)',
+        'alt': 'var(--alt)',
+        'numbers': 'var(--numbers)',
       }
     },
   },

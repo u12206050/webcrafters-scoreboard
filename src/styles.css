@@ -8,4 +8,9 @@
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    --background: #9CDABC;
+    --prime: #007681;
+    --alt: #63666A;
+    --numbers: #CF578A;
 }
