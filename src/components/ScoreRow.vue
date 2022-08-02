@@ -1,7 +1,8 @@
 <template>
   <div class="py-1 sm:py-2" :class="isActive ? 'sticky bottom-0 top-0 z-50' : ''">
     <div class="rounded-xl text-lg sm:text-xl font-medium py-2 sm:py-4 pl-2 pr-4 sm:pl-4 sm:pr-8 flex items-center"
-      :class="isActive ? 'border-2 border-numbers bg-alt' : 'border border-white-30'"
+      :class="isActive ? 'border-2 border-numbers bg-highlighted' : ''"
+      :style="isActive ? '' : `border: var(--border)`"
     >
       <p class="text-numbers w-10 text-right">{{ rank }}.</p>
       <div class="px-4 flex-1">

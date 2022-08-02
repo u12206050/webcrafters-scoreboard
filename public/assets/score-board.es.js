@@ -17770,7 +17770,8 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     class: normalizeClass(["py-1 sm:py-2", $props.isActive ? "sticky bottom-0 top-0 z-50" : ""])
   }, [
     createBaseVNode("div", {
-      class: normalizeClass(["rounded-xl text-lg sm:text-xl font-medium py-2 sm:py-4 pl-2 pr-4 sm:pl-4 sm:pr-8 flex items-center", $props.isActive ? "border-2 border-numbers bg-alt" : "border border-white-30"])
+      class: normalizeClass(["rounded-xl text-lg sm:text-xl font-medium py-2 sm:py-4 pl-2 pr-4 sm:pl-4 sm:pr-8 flex items-center", $props.isActive ? "border-2 border-numbers bg-highlighted" : ""]),
+      style: normalizeStyle($props.isActive ? "" : `border: var(--border)`)
     }, [
       createBaseVNode("p", _hoisted_1$1, toDisplayString($props.rank) + ".", 1),
       createBaseVNode("div", _hoisted_2$1, [
@@ -17781,7 +17782,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         _hoisted_6$1,
         createBaseVNode("p", _hoisted_7, toDisplayString($props.score), 1)
       ])
-    ], 2)
+    ], 6)
   ], 2);
 }
 var ScoreRow = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render]]);

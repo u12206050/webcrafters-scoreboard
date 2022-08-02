@@ -15,6 +15,7 @@ module.exports = {
         'prime': 'var(--prime)',
         'alt': 'var(--alt)',
         'numbers': 'var(--numbers)',
+        'highlighted': 'var(--highlighted)',
       }
     },
   },
